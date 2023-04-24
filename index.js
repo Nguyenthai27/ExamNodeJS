@@ -6,7 +6,7 @@ const app = express();
 const userRouter = require("./src/routes/user.route");
 app.use("/users",userRouter);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 2000;
 app.set("view engine","ejs");
 
 app.use("/users",userRouter);

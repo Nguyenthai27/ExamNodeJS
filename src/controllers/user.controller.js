@@ -18,7 +18,7 @@ exports.save = (req,res)=>{
     let s = req.body;
     const User = require("./src/models/user");
     let newUser = new User(s);
-    newStudent.save().then(rs=>{
+    newUser.save().then(rs=>{
         res.redirect("/users");
     }).catch(err=>{
         res.send(err);
